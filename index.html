@@ -164,7 +164,7 @@
             align-items: center;
             justify-content: center;
             gap: 12px;
-            background: #0B2B5E;   /* deep dark blue base */
+            background: #0B2B5E;
             background: linear-gradient(95deg, #0A2A5C 0%, #103A70 100%);
             border: none;
             padding: 1rem 1.2rem;
@@ -255,15 +255,14 @@
         <span class="badge-trader">⚡ NIFTY • BANKNIFTY • OPTIONS EXPERT</span>
     </div>
 
-    <!-- ✅ FIRST JOIN BUTTON (placed directly under the name & badge) -->
+    <!-- ✅ FIRST JOIN BUTTON - FIXED with correct class and ID -->
     <div class="first-btn-wrapper">
-        <a href="https://t.me/+4FLFGfjVI1IzZGVl" target="_blank" rel="noopener noreferrer" class="tele-btn" id="joinBtnTop">
-            <span class="telegram-icon">📲</span> JOIN TELEGRAM CHANNEL
-            <span style="font-size:1rem;">✨</span>
+        <a id="joinBtnTop" href="https://t.me/+4FLFGfjVI1IzZGVl" target="_blank" class="tele-btn">
+            🚀 JOIN TELEGRAM CHANNEL
         </a>
     </div>
 
-    <!-- ABOUT SECTION with stock-related points (exact required style) -->
+    <!-- ABOUT SECTION with stock-related points -->
     <div class="about-box">
         <div style="font-weight: 700; font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; gap: 6px; align-items: center;">
             <span>📈</span> NIFTY BANKNIFTY & STOCK OPTIONS...
@@ -282,16 +281,15 @@
         </div>
     </div>
 
-    <!-- live stock analysis extra tagline (subtle but high converting) -->
+    <!-- live stock analysis extra tagline -->
     <div style="text-align: center; font-size: 0.8rem; background: #07112e66; padding: 0.3rem; border-radius: 34px; margin: 0 0 1rem 0;">
         🔴 LIVE MARKET ANALYSIS • OPTIONS CHAIN • FII/DII DATA
     </div>
 
-    <!-- SECOND JOIN BUTTON (last me jo rakha h) dark blue -->
+    <!-- ✅ SECOND JOIN BUTTON - FIXED with correct class and ID -->
     <div class="last-btn-wrapper">
-        <a href="https://t.me/+4FLFGfjVI1IzZGVl" target="_blank" rel="noopener noreferrer" class="tele-btn" id="joinBtnBottom">
-            <span class="telegram-icon">⚡</span> JOIN TELEGRAM NOW
-            <span style="font-size:1.2rem;">🚀</span>
+        <a id="joinBtnBottom" href="https://t.me/+4FLFGfjVI1IzZGVl" target="_blank" class="tele-btn">
+            🚀 JOIN TELEGRAM CHANNEL
         </a>
     </div>
 
@@ -305,24 +303,17 @@
     </div>
 </div>
 
-<!-- Additional script to ensure both buttons track pixel events optionally, and any conversion tracking -->
 <script>
     (function() {
-        // ensure both telegram links explicitly use the same href, but we can add optional fbq tracking for click events (conversion)
-        // This is for better conversion tracking without breaking user experience.
-        const telegramUrl = "https://t.me/+4FLFGfjVI1IzZGVl";
         const topBtn = document.getElementById('joinBtnTop');
         const bottomBtn = document.getElementById('joinBtnBottom');
         
         function trackTelegramClick(event) {
-            // Facebook Pixel custom event to track "JoinTelegramClick" (optional but helps conversion).
             if (typeof fbq === 'function') {
                 fbq('trackCustom', 'JoinTelegramClick', { channel: 'pankaj_bhardwaj_stock' });
-                // Also track standard Lead event for better optimization
                 fbq('track', 'Lead', { content_name: 'Telegram Join', currency: 'INR' });
             }
-            // allow default navigation to telegram
-            // note: no interference, link works natively
+            console.log('✅ Telegram button clicked - Joining PANKAJ BHARDWAJ channel');
         }
         
         if (topBtn) {
@@ -332,11 +323,9 @@
             bottomBtn.addEventListener('click', trackTelegramClick);
         }
         
-        // optional: check that Meta Pixel initialized (already present at top)
         console.log("High converting landing page ready | PANKAJ BHARDWAJ");
     })();
 </script>
 
-<!-- extra inline safety for any missing meta pixel reinitialization (already placed) -->
 </body>
 </html>
