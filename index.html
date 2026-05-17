@@ -1,331 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>PANKAJ BHARDWAJ • Stock Market Elite Signals</title>
-    <!-- Meta Pixel Code (Facebook) -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1449371036661265');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=1449371036661265&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
+  <title>PANKAJ BHARDWAJ | Elite Stock Market Signals</title>
+  
+  <!-- Meta Pixel Code (ID: 1449371036661265) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1449371036661265');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1449371036661265&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            background: linear-gradient(145deg, #0a0f1e 0%, #0c1222 100%);
-            font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            padding: 2rem 1.5rem;
-            color: #eef2ff;
-            line-height: 1.4;
-        }
+    body {
+      background: linear-gradient(135deg, #0a0a1a 0%, #0f1428 100%);
+      font-family: 'Inter', 'Segoe UI', system-ui, 'Poppins', 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px 16px;
+    }
 
-        /* Main card container */
-        .landing-card {
-            max-width: 680px;
-            margin: 0 auto;
-            background: rgba(18, 25, 45, 0.75);
-            backdrop-filter: blur(2px);
-            border-radius: 56px;
-            padding: 2rem 2rem 2.8rem;
-            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(66, 153, 225, 0.15);
-            transition: all 0.2s ease;
-        }
+    /* Main Card */
+    .landing-card {
+      max-width: 640px;
+      width: 100%;
+      background: rgba(12, 18, 34, 0.95);
+      backdrop-filter: blur(10px);
+      border-radius: 56px;
+      padding: 28px 24px 44px;
+      box-shadow: 0 30px 45px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(59, 130, 246, 0.3);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(59, 130, 246, 0.4);
+    }
 
-        /* Logo + header area */
-        .logo-wrapper {
-            text-align: center;
-            margin-bottom: 1.2rem;
-        }
+    /* Logo */
+    .logo-wrapper {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+    .circle-logo {
+      background: #0f1428;
+      display: inline-flex;
+      padding: 6px;
+      border-radius: 80px;
+      box-shadow: 0 12px 22px -6px black;
+    }
+    .logo-img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 60px;
+      border: 2.5px solid #3b82f6;
+      transition: transform 0.2s;
+    }
+    .logo-img:hover {
+      transform: scale(1.02);
+    }
 
-        .logo-img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 32px;
-            box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.5), 0 0 0 3px rgba(59, 130, 246, 0.3);
-            transition: transform 0.2s;
-        }
+    /* Channel Name - YELLOW */
+    .channel-name {
+      text-align: center;
+      margin-top: 12px;
+      margin-bottom: 10px;
+    }
+    .channel-name h1 {
+      font-size: 2.35rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FDE047, #FACC15, #EAB308);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.2px;
+      text-shadow: 0 0 8px rgba(250, 204, 21, 0.4);
+    }
+    @supports not (background-clip: text) {
+      .channel-name h1 {
+        color: #FACC15;
+        background: none;
+      }
+    }
+    .badge {
+      background: #1a2335;
+      display: inline-block;
+      padding: 5px 18px;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #93c5fd;
+      margin-top: 8px;
+      backdrop-filter: blur(5px);
+      border: 0.5px solid #3b82f6;
+    }
 
-        .logo-img:hover {
-            transform: scale(1.02);
-        }
+    /* Stock Benefits */
+    .stock-benefits {
+      background: rgba(8, 12, 24, 0.85);
+      backdrop-filter: blur(4px);
+      border-radius: 40px;
+      padding: 22px 24px;
+      margin: 24px 0 28px;
+      border: 1px solid #2d3a5e;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+    .benefit-line {
+      margin: 14px 0;
+      line-height: 1.45;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .check-icon {
+      background: #2563eb;
+      width: 26px;
+      height: 26px;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      font-size: 14px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .highlight {
+      color: #facc15;
+      font-weight: 800;
+      background: rgba(0,0,0,0.4);
+      padding: 2px 8px;
+      border-radius: 24px;
+    }
+    .disclaimer-text {
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px solid #334155;
+      font-size: 0.85rem;
+      color: #facc15;
+      background: rgba(0, 0, 0, 0.35);
+      border-radius: 28px;
+      padding: 12px 18px;
+      text-align: center;
+      font-weight: 600;
+    }
 
-        .channel-name {
-            text-align: center;
-            font-size: 2.2rem;
-            font-weight: 800;
-            letter-spacing: -0.01em;
-            background: linear-gradient(135deg, #FFFFFF 0%, #C0D9FF 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            margin-top: 1rem;
-            margin-bottom: 0.25rem;
-            text-shadow: 0 2px 3px rgba(0,0,0,0.1);
-        }
+    /* TWO BUTTONS - DARK BLUE COLOR */
+    .double-buttons-above {
+      margin: 8px 0 6px;
+    }
+    .btn-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+    .telegram-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #1e3a8a;
+      border: none;
+      padding: 16px 18px;
+      border-radius: 60px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: white;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 12px 18px -6px rgba(0, 0, 0, 0.5);
+      border-bottom: 2px solid #3b82f6;
+      letter-spacing: 0.3px;
+    }
+    .telegram-btn i {
+      font-style: normal;
+      font-size: 1.35rem;
+      filter: drop-shadow(0 1px 1px black);
+    }
+    .telegram-btn:hover {
+      background: #172554;
+      transform: scale(1.01);
+      box-shadow: 0 18px 25px -12px black;
+      border-bottom-color: #60a5fa;
+    }
+    .telegram-btn:active {
+      transform: scale(0.98);
+    }
+    .btn-second {
+      background: #1e3a8a;
+      border-bottom: 2px solid #3b82f6;
+    }
+    .btn-second:hover {
+      background: #172554;
+    }
 
-        .badge-trader {
-            text-align: center;
-            font-size: 0.8rem;
-            background: rgba(0, 100, 255, 0.2);
-            display: inline-block;
-            width: auto;
-            margin: 0 auto 1rem;
-            padding: 0.3rem 1rem;
-            border-radius: 60px;
-            backdrop-filter: blur(4px);
-            color: #9ac8ff;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-        }
+    /* Live Pulse */
+    .live-pulse {
+      display: inline-flex;
+      align-items: center;
+      background: #1e293b;
+      border-radius: 36px;
+      padding: 4px 12px;
+      font-size: 0.7rem;
+      margin-left: 8px;
+      gap: 4px;
+    }
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #22c55e;
+      border-radius: 50%;
+      display: inline-block;
+      animation: pulseGreen 1.2s infinite;
+    }
+    @keyframes pulseGreen {
+      0% { opacity: 0.4; transform: scale(0.8); background-color: #4ade80;}
+      100% { opacity: 1; transform: scale(1.2); background-color: #16a34a;}
+    }
+    .join-note {
+      text-align: center;
+      font-size: 0.72rem;
+      color: #94a3b8;
+      margin-top: 16px;
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #475569;
+      margin-top: 28px;
+    }
 
-        /* about section / description */
-        .about-box {
-            background: rgba(10, 18, 30, 0.65);
-            border-radius: 32px;
-            padding: 1.6rem 1.8rem;
-            margin: 1.5rem 0 1.8rem 0;
-            border: 1px solid rgba(59,130,246,0.25);
-            backdrop-filter: blur(6px);
-        }
-
-        .highlight-list {
-            list-style: none;
-            margin-top: 0.5rem;
-        }
-
-        .highlight-list li {
-            margin-bottom: 1rem;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 1rem;
-            color: #eef5ff;
-        }
-
-        .highlight-list li:before {
-            content: "✅";
-            font-size: 1.2rem;
-            filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
-        }
-
-        .disclaimer {
-            font-size: 0.7rem;
-            margin-top: 1.4rem;
-            color: #8095b5;
-            border-top: 1px dashed #2a3a55;
-            padding-top: 1rem;
-            text-align: center;
-            letter-spacing: 0.2px;
-        }
-
-        .daily-demo {
-            background: #0d1428;
-            display: inline-block;
-            width: 100%;
-            text-align: center;
-            padding: 0.5rem;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 0.8rem;
-            color: #ffde9c;
-            margin-top: 0.6rem;
-        }
-
-        /* BUTTONS section - both dark blue style */
-        .button-group {
-            display: flex;
-            flex-direction: column;
-            gap: 1.2rem;
-            margin: 2rem 0 1.2rem;
-        }
-
-        .tele-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            background: #0B2B5E;
-            background: linear-gradient(95deg, #0A2A5C 0%, #103A70 100%);
-            border: none;
-            padding: 1rem 1.2rem;
-            border-radius: 60px;
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: -0.2px;
-            color: white;
-            text-decoration: none;
-            transition: all 0.25s ease;
-            box-shadow: 0 8px 18px -6px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 162, 255, 0.4);
-            cursor: pointer;
-            text-align: center;
-            backdrop-filter: blur(2px);
-        }
-
-        .tele-btn:hover {
-            transform: translateY(-3px);
-            background: linear-gradient(95deg, #0F3570, #15487e);
-            box-shadow: 0 15px 25px -10px black;
-            border-color: #2b6ef0;
-        }
-
-        .tele-btn:active {
-            transform: translateY(2px);
-        }
-
-        .telegram-icon {
-            font-size: 1.7rem;
-            filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
-        }
-
-        /* first button (top) placed right below channel name */
-        .first-btn-wrapper {
-            margin: 0.2rem 0 0.5rem;
-        }
-
-        /* last button at bottom */
-        .last-btn-wrapper {
-            margin-top: 0.8rem;
-        }
-
-        /* secondary text */
-        .join-note {
-            font-size: 0.75rem;
-            text-align: center;
-            opacity: 0.8;
-            margin-top: 1.2rem;
-            color: #98b1da;
-        }
-
-        hr {
-            border: 0.5px solid #1f314a;
-            margin: 0.5rem 0;
-        }
-
-        @media (max-width: 550px) {
-            body {
-                padding: 1.2rem;
-            }
-            .landing-card {
-                padding: 1.6rem 1.4rem 2.2rem;
-            }
-            .channel-name {
-                font-size: 1.8rem;
-            }
-            .tele-btn {
-                font-size: 1.1rem;
-                padding: 0.85rem 1rem;
-            }
-            .highlight-list li {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+    /* Mobile */
+    @media (max-width: 550px) {
+      .landing-card {
+        padding: 20px 18px 36px;
+      }
+      .channel-name h1 {
+        font-size: 1.85rem;
+      }
+      .telegram-btn {
+        font-size: 1rem;
+        padding: 13px 14px;
+        gap: 8px;
+      }
+      .benefit-line {
+        font-size: 0.92rem;
+        gap: 8px;
+      }
+      .logo-img {
+        width: 85px;
+        height: 85px;
+      }
+      .stock-benefits {
+        padding: 16px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <div class="landing-card">
-    <!-- Logo Section -->
-    <div class="logo-wrapper">
-        <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2025/11/download-9.jpg" alt="Stock Market Elite Logo" onerror="this.onerror=null; this.src='https://placehold.co/200x200/0B2B5E/white?text=STOCK'">
+  <!-- Logo -->
+  <div class="logo-wrapper">
+    <div class="circle-logo">
+      <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2025/11/download-9.jpg" 
+           alt="PANKAJ BHARDWAJ Trading" 
+           onerror="this.onerror=null; this.src='https://placehold.co/100x100?text=PB'">
     </div>
+  </div>
 
-    <!-- Channel Name: PANKAJ BHARDWAJ -->
-    <div class="channel-name">PANKAJ BHARDWAJ</div>
-    <div style="text-align: center; margin-top: -5px;">
-        <span class="badge-trader">⚡ NIFTY • BANKNIFTY • OPTIONS EXPERT</span>
+  <!-- Channel Name - YELLOW -->
+  <div class="channel-name">
+    <h1>PANKAJ BHARDWAJ</h1>
+    <div class="badge">
+      📈 TELEGRAM ELITE SIGNALS <span class="live-pulse"><span class="pulse-dot"></span> LIVE MARKET</span>
     </div>
+  </div>
 
-    <!-- ✅ FIRST JOIN BUTTON - FIXED with correct class and ID -->
-    <div class="first-btn-wrapper">
-        <a id="joinBtnTop" href="https://t.me/+4FLFGfjVI1IzZGVl" target="_blank" class="tele-btn">
-            🚀 JOIN TELEGRAM CHANNEL
-        </a>
+  <!-- TWO JOIN BUTTONS (DARK BLUE) with NEW LINK -->
+  <div class="double-buttons-above">
+    <div class="btn-stack">
+      <a href="https://t.me/+4FLFGfjVI1IzZGVl" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="telegram-btn"
+         onclick="fbq('track', 'Subscribe', {content_name: 'Telegram Join Top Button', link: 'https://t.me/+4FLFGfjVI1IzZGVl'}); fbq('track', 'Lead', {button_position: 'first_below_name'});">
+        <i>📱</i> JOIN TELEGRAM CHANNEL
+      </a>
+      
+      <a href="https://t.me/+4FLFGfjVI1IzZGVl" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="telegram-btn btn-second"
+         onclick="fbq('track', 'Subscribe', {content_name: 'Telegram Join Second Button', link: 'https://t.me/+4FLFGfjVI1IzZGVl'}); fbq('track', 'Lead', {button_position: 'second_below_name'});">
+        <i>⚡</i> GET FREE CALLS → JOIN NOW
+      </a>
     </div>
+  </div>
 
-    <!-- ABOUT SECTION with stock-related points -->
-    <div class="about-box">
-        <div style="font-weight: 700; font-size: 1.2rem; margin-bottom: 0.5rem; display: flex; gap: 6px; align-items: center;">
-            <span>📈</span> NIFTY BANKNIFTY & STOCK OPTIONS...
-        </div>
-        <ul class="highlight-list">
-            <li>✅ Get up to 100-300 Points</li>
-            <li>✅ 80-90% Accuracy</li>
-            <li>✅ 3-4 observational Call daily</li>
-            <li>✅ 3 daily best trade for all</li>
-        </ul>
-        <div class="daily-demo">
-            📢 Disclaimer:- DAILY FREE DEMO CALL ✅
-        </div>
-        <div class="disclaimer">
-            *Live stock analysis & real-time market pulse | Investment involves risk, trade wisely.
-        </div>
+  <!-- Stock Benefits -->
+  <div class="stock-benefits">
+    <div class="benefit-line">
+      <span class="check-icon">✓</span> <strong>NIFTY, BANKNIFTY & STOCK OPTIONS</strong> — Get up to <span class="highlight">150-400 Points</span> Per Move
     </div>
+    <div class="benefit-line">
+      <span class="check-icon">✓</span> <strong>85%+ Accuracy</strong> with Pro Option Chain & Flow Analysis
+    </div>
+    <div class="benefit-line">
+      <span class="check-icon">✓</span> <strong>4-5 Observational Calls Daily</strong> + 3 Best Setups for Everyone
+    </div>
+    <div class="benefit-line">
+      <span class="check-icon">✓</span> <strong>Live Index & Stock Analysis</strong> | Real-time Market Commentary
+    </div>
+    <div class="benefit-line">
+      <span class="check-icon">✓</span> <strong>Weekly Trading Blueprint</strong> & Risk Management Tips
+    </div>
+    <div class="disclaimer-text">
+      🔥 DAILY FREE DEMO CALL ✅  •  Transparent Track Record • Join & Grow
+    </div>
+  </div>
 
-    <!-- live stock analysis extra tagline -->
-    <div style="text-align: center; font-size: 0.8rem; background: #07112e66; padding: 0.3rem; border-radius: 34px; margin: 0 0 1rem 0;">
-        🔴 LIVE MARKET ANALYSIS • OPTIONS CHAIN • FII/DII DATA
-    </div>
-
-    <!-- ✅ SECOND JOIN BUTTON - FIXED with correct class and ID -->
-    <div class="last-btn-wrapper">
-        <a id="joinBtnBottom" href="https://t.me/+4FLFGfjVI1IzZGVl" target="_blank" class="tele-btn">
-            🚀 JOIN TELEGRAM CHANNEL
-        </a>
-    </div>
-
-    <!-- extra trust / social proof -->
-    <div class="join-note">
-        🔒 Instant access • 5000+ active members • Daily free calls
-    </div>
-    <hr>
-    <div style="font-size: 0.65rem; text-align: center; margin-top: 0.8rem; color: #5f7a9e;">
-        © PANKAJ BHARDWAJ — Stock Market Intelligence
-    </div>
+  <div class="join-note">
+    💎 Instant Access • No Spam • Live Options/Futures Calls • 24x7 Trade Updates
+  </div>
+  
+  <footer>
+    © PANKAJ BHARDWAJ | Professional Stock Market Education
+  </footer>
 </div>
 
+<!-- Tracking Script -->
 <script>
-    (function() {
-        const topBtn = document.getElementById('joinBtnTop');
-        const bottomBtn = document.getElementById('joinBtnBottom');
-        
-        function trackTelegramClick(event) {
-            if (typeof fbq === 'function') {
-                fbq('trackCustom', 'JoinTelegramClick', { channel: 'pankaj_bhardwaj_stock' });
-                fbq('track', 'Lead', { content_name: 'Telegram Join', currency: 'INR' });
-            }
-            console.log('✅ Telegram button clicked - Joining PANKAJ BHARDWAJ channel');
-        }
-        
-        if (topBtn) {
-            topBtn.addEventListener('click', trackTelegramClick);
-        }
-        if (bottomBtn) {
-            bottomBtn.addEventListener('click', trackTelegramClick);
-        }
-        
-        console.log("High converting landing page ready | PANKAJ BHARDWAJ");
-    })();
+  (function() {
+    const allJoinBtns = document.querySelectorAll('.telegram-btn');
+    const telegramChannelLink = "https://t.me/+4FLFGfjVI1IzZGVl";
+    
+    if (allJoinBtns.length) {
+      allJoinBtns.forEach((btn, idx) => {
+        btn.addEventListener('click', (e) => {
+          if (typeof fbq === 'function') {
+            fbq('track', 'Subscribe', {
+              content_name: idx === 0 ? 'Main_Join_Telegram' : 'Secondary_Join_Telegram',
+              value: 0,
+              currency: 'INR',
+              link: telegramChannelLink
+            });
+            fbq('track', 'Lead', {
+              content_category: 'Telegram_Channel_Join',
+              button_label: idx === 0 ? 'First_Join_Button' : 'Second_Join_Button',
+              link: telegramChannelLink
+            });
+            fbq('trackCustom', 'TelegramJoinClick', {
+              button_position: idx === 0 ? 'top' : 'bottom',
+              channel: 'Pankaj_Bhardwaj_Signals'
+            });
+          }
+        });
+      });
+    }
+    
+    let scrollTracked = false;
+    window.addEventListener('scroll', function() {
+      if (!scrollTracked && window.scrollY > 200) {
+        if (typeof fbq === 'function') fbq('track', 'ScrollDepth', { depth: '30%' });
+        scrollTracked = true;
+      }
+    });
+    
+    let startTime = Date.now();
+    window.addEventListener('beforeunload', function() {
+      let timeSpent = Math.floor((Date.now() - startTime) / 1000);
+      if (timeSpent > 10 && typeof fbq === 'function') {
+        fbq('track', 'TimeOnPage', { duration_seconds: timeSpent });
+      }
+    });
+  })();
 </script>
-
 </body>
 </html>
