@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
     <title>PANKAJ BHARDWAJ | Stock Market Telegram Channel</title>
     
-    <!-- ✅ NEW META PIXEL CODE - ID: 1329672875900618 -->
+    <!-- ✅ NEW META PIXEL CODE - ID: 1392443636272711 -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -15,16 +15,16 @@
         t.src=v;s=b.getElementsByTagName(e)[0];
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1329672875900618');
+        fbq('init', '1392443636272711');
         fbq('track', 'PageView', {
             page_type: 'Telegram_Subscribe_Landing',
             creator: 'PANKAJ_BHARDWAJ',
             niche: 'Stock_Market_Options_Nifty_BankNifty'
         });
-        console.log('✅ Facebook Pixel Initialized – ID: 1329672875900618');
+        console.log('✅ Facebook Pixel Initialized – ID: 1392443636272711');
     </script>
     <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1329672875900618&ev=PageView&noscript=1"/>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1392443636272711&ev=PageView&noscript=1"/>
     </noscript>
     <!-- End Meta Pixel Code -->
     
@@ -378,13 +378,13 @@
 
 <script>
     // ============================================================
-    // COMPLETE FACEBOOK PIXEL TRACKING - PIXEL ID: 1329672875900618
+    // COMPLETE FACEBOOK PIXEL TRACKING - PIXEL ID: 1392443636272711
     // TELEGRAM LINK: https://t.me/+4FLFGfjVI1IzZGVl
     // ============================================================
     
     (function() {
         const TELEGRAM_LINK = "https://t.me/+4FLFGfjVI1IzZGVl";
-        const PIXEL_ID = "1329672875900618";
+        const PIXEL_ID = "1392443636272711";
         
         const topBtn = document.getElementById('joinBtnPrimary');
         const secondBtn = document.getElementById('joinBtnSecondary');
@@ -432,7 +432,20 @@
                     button_used: position
                 });
                 
-                console.log(`✅ [Pixel ${PIXEL_ID}] Events: Lead, Subscribe, CompleteRegistration (${position})`);
+                // 4. Contact Event
+                fbq('track', 'Contact', {
+                    contact_method: 'Telegram_Channel',
+                    content_name: 'Pankaj_Bhardwaj_Telegram_Join'
+                });
+                
+                // 5. CustomEvent for deeper analytics
+                fbq('trackCustom', 'PankajTelegramJoin', {
+                    button_name: buttonText,
+                    location: position,
+                    source: 'landing_page'
+                });
+                
+                console.log(`✅ [Pixel ${PIXEL_ID}] Events: Lead, Subscribe, CompleteRegistration, Contact, CustomEvent (${position})`);
                 showToast('✅ Joined! Events tracked.', 1500);
             } else {
                 console.warn('⚠️ Facebook Pixel not ready');
@@ -456,7 +469,7 @@
         attachTracking(secondBtn, 'second_under_name');
         
         // ============================================
-        // ADDITIONAL ENGAGEMENT TRACKING (Limited)
+        // ADDITIONAL ENGAGEMENT TRACKING
         // ============================================
         if (isFbqReady()) {
             // Track scroll depth
@@ -484,11 +497,24 @@
                     });
                 }
             });
+            
+            // Button hover tracking
+            const buttons = [topBtn, secondBtn];
+            buttons.forEach(btn => {
+                if (btn) {
+                    btn.addEventListener('mouseenter', function() {
+                        fbq('trackCustom', 'ButtonHover', {
+                            button_name: this.getAttribute('data-button-name') || 'Join_Button',
+                            position: this.getAttribute('data-button-position') || 'unknown'
+                        });
+                    });
+                }
+            });
         }
         
         console.log(`✅ PANKAJ BHARDWAJ | Pixel ID: ${PIXEL_ID}`);
         console.log(`✅ Telegram Link: ${TELEGRAM_LINK}`);
-        console.log('✅ 2 Join buttons tracked with: Lead, Subscribe, CompleteRegistration');
+        console.log('✅ 2 Join buttons tracked with: Lead, Subscribe, CompleteRegistration, Contact, CustomEvent');
         
         // Debug helper
         window.pankajTracker = {
@@ -505,9 +531,10 @@
 
 <!-- Noscript fallback -->
 <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1329672875900618&ev=Lead&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1329672875900618&ev=Subscribe&noscript=1"/>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1329672875900618&ev=CompleteRegistration&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1392443636272711&ev=Lead&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1392443636272711&ev=Subscribe&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1392443636272711&ev=CompleteRegistration&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1392443636272711&ev=Contact&noscript=1"/>
 </noscript>
 
 </body>
